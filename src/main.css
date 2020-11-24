@@ -18,7 +18,7 @@ html {
   padding: 0;
 }
 
-.keys {
+.key-wrapper {
   display: grid;
   grid-template-rows: repeat(1, 16vh);
   grid-template-columns: repeat(9, 16vh);
