@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('/drum-kit/assets/font/Roboto.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  height: 100vh;
+  background: url('/drum-kit/assets/image/background.jpg') bottom center;
+  background-size: cover;
+  background-position: center;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.key-wrapper {
+  display: grid;
+  grid-template-rows: repeat(1, 16vh);
+  grid-template-columns: repeat(9, 16vh);
+  gap: 2.5vh;
+  padding: 0 7vh;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+}
+
+.key {
+  padding: 1vh 1vh;
+  text-align: center;
+  width: 12vh;
+  height: 12vh;
+  border: 0.6vh solid white;
+  border-radius: 2.5vh;
+  text-shadow: 0 0 0.5rem black;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+  transition: all 0.07s ease;
+}
+
+.playing {
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+  transform: scale(1.1);
+}
+
+kbd {
+  display: block;
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 7vh;
+}
+
+.sound {
+  font-family: 'Roboto';
+  font-size: 2vh;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.15vh;
+  color: #ffc600;
+}
+
+@media (max-width: 1420px) {
+  .keys {
+    grid-template-columns: repeat(auto-fit, 16vh);
+    grid-template-rows: repeat(auto-fit, 16vh);
+  }
+  .key {
+    width: 12vh;
+    height: 12vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .keys {
+    padding: 0 5vh;
+    grid-template-columns: repeat(auto-fit, 12vh);
+    grid-template-rows: repeat(auto-fit, 12vh);
+    gap: 1.2vh;
+  }
+  .key {
+    width: 8vh;
+    height: 8vh;
+  }
+  kbd {
+    font-size: 4.5vh;
+  }
+  .sound {
+    font-size: 1.5vh;
+  }
+}
