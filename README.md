@@ -2,7 +2,7 @@
 
 **[Task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/stage-0/projects.md#task-4-drum-kit-20)**
 
-**[Result](https://leonidshatilo.github.io/drum-kit/)**
+**[DEMO](https://leonidshatilo.github.io/drum-kit/)**
 
 ---
 
